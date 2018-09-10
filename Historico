@@ -1,0 +1,107 @@
+$ git log --oneline
+adba42e (HEAD -> master) nova classe TesteMaster
+3b2c860 (design) nova classe teste
+5276fb9 (tag: Inicio) versao inicial do sistema
+
+Andre@DESKTOP-293K13T MINGW64 /f/IFTM - 4° Período/ESOF 2018/Ex2 Branch/SistemaExtensaoSTS (master)
+$ ^C
+
+Andre@DESKTOP-293K13T MINGW64 /f/IFTM - 4° Período/ESOF 2018/Ex2 Branch/SistemaExtensaoSTS (master)
+$ ^C
+
+Andre@DESKTOP-293K13T MINGW64 /f/IFTM - 4° Período/ESOF 2018/Ex2 Branch/SistemaExtensaoSTS (master)
+$ git tag "vteste" adba42e
+
+Andre@DESKTOP-293K13T MINGW64 /f/IFTM - 4° Período/ESOF 2018/Ex2 Branch/SistemaExtensaoSTS (master)
+$ git tag
+Inicio
+vteste
+
+Andre@DESKTOP-293K13T MINGW64 /f/IFTM - 4° Período/ESOF 2018/Ex2 Branch/SistemaExtensaoSTS (master)
+$ git show
+commit adba42e1eece46ee2b803c9468aa8a6a1c399ff1 (HEAD -> master, tag: vteste)
+Author: Cabomaldades <soutom@yahoo.com.br>
+Date:   Sun Sep 9 22:13:30 2018 -0300
+
+    nova classe TesteMaster
+
+diff --git a/TesteMaster.java b/TesteMaster.java
+new file mode 100644
+index 0000000..af64432
+--- /dev/null
++++ b/TesteMaster.java
+@@ -0,0 +1,3 @@
++public class TesteMaster{
++
++}
+\ No newline at end of file
+
+Andre@DESKTOP-293K13T MINGW64 /f/IFTM - 4° Período/ESOF 2018/Ex2 Branch/SistemaExtensaoSTS (master)
+$ git tag "Inicio" -d
+Deleted tag 'Inicio' (was 5276fb9)
+
+Andre@DESKTOP-293K13T MINGW64 /f/IFTM - 4° Período/ESOF 2018/Ex2 Branch/SistemaExtensaoSTS (master)
+$ git tag
+vteste
+
+Andre@DESKTOP-293K13T MINGW64 /f/IFTM - 4° Período/ESOF 2018/Ex2 Branch/SistemaExtensaoSTS (master)
+$ clear
+
+Andre@DESKTOP-293K13T MINGW64 /f/IFTM - 4° Período/ESOF 2018/Ex2 Branch/SistemaExtensaoSTS (master)
+$ git remote add origin https://github.com/Cabomaldade/Lista-de-Exerc-cios-Git-e-Github-branches-e-tags.git
+
+Andre@DESKTOP-293K13T MINGW64 /f/IFTM - 4° Período/ESOF 2018/Ex2 Branch/SistemaExtensaoSTS (master)
+$ git add .
+
+Andre@DESKTOP-293K13T MINGW64 /f/IFTM - 4° Período/ESOF 2018/Ex2 Branch/SistemaExtensaoSTS (master)
+$ git commit -m "Entrega exercícios sobre branches e tags"
+On branch master
+nothing to commit, working tree clean
+
+Andre@DESKTOP-293K13T MINGW64 /f/IFTM - 4° Período/ESOF 2018/Ex2 Branch/SistemaExtensaoSTS (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+Andre@DESKTOP-293K13T MINGW64 /f/IFTM - 4° Período/ESOF 2018/Ex2 Branch/SistemaExtensaoSTS (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Andre@DESKTOP-293K13T MINGW64 /f/IFTM - 4° Período/ESOF 2018/Ex2 Branch/SistemaExtensaoSTS (master)
+$ git log
+commit adba42e1eece46ee2b803c9468aa8a6a1c399ff1 (HEAD -> master, tag: vteste)
+Author: Cabomaldades <soutom@yahoo.com.br>
+Date:   Sun Sep 9 22:13:30 2018 -0300
+
+    nova classe TesteMaster
+
+commit 3b2c86015a4a730aa06f11551e8fe7d095cca921 (design)
+Author: Cabomaldades <soutom@yahoo.com.br>
+Date:   Sun Sep 9 22:09:25 2018 -0300
+
+    nova classe teste
+
+commit 5276fb91a59a0b48a051aa14d7db131ec1c6046f
+Author: Cabomaldades <soutom@yahoo.com.br>
+Date:   Sun Sep 9 22:06:55 2018 -0300
+
+    versao inicial do sistema
+
+Andre@DESKTOP-293K13T MINGW64 /f/IFTM - 4° Período/ESOF 2018/Ex2 Branch/SistemaExtensaoSTS (master)
+$ git push -u origin master
+Enumerating objects: 31, done.
+Counting objects: 100% (31/31), done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (20/20), done.
+Writing objects: 100% (31/31), 47.04 KiB | 1.47 MiB/s, done.
+Total 31 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/Cabomaldade/Lista-de-Exerc-cios-Git-e-Github-branches-e-tags.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Andre@DESKTOP-293K13T MINGW64 /f/IFTM - 4° Período/ESOF 2018/Ex2 Branch/SistemaExtensaoSTS (master)
